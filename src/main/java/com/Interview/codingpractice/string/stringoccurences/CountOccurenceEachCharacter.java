@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.stringoccurences;
+package com.Interview.codingpractice.string.stringoccurences;
 
 import java.util.HashMap;
 import java.util.Map;

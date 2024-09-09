@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.validparantheses;
+package com.Interview.codingpractice.string.validparantheses;
 
 import java.util.Scanner;
 import java.util.Stack;

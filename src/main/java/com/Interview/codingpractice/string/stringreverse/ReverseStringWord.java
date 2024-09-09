@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.stringreverse;
+package com.Interview.codingpractice.string.stringreverse;
 
 public class ReverseStringWord {
     public static void main(String[] args) {

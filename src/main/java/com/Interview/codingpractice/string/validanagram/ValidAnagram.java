@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.validanagram;
+package com.Interview.codingpractice.string.validanagram;
 
 import java.util.HashMap;
 import java.util.Scanner;

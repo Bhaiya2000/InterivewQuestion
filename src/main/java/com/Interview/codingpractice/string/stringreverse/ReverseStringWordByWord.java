@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.stringreverse;
+package com.Interview.codingpractice.string.stringreverse;
 
 import java.util.Scanner;
 

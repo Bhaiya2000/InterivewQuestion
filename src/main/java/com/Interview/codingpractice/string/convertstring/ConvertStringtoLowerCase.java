@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.convertstring;
+package com.Interview.codingpractice.string.convertstring;
 
 import java.util.Scanner;
 
