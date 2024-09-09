@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.substring;
+package com.Interview.codingpractice.string.substring;
 
 import java.util.HashSet;
 import java.util.Scanner;
