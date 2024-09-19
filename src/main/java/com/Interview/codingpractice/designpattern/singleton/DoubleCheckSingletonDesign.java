@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.designpattern;
+package com.Interview.codingpractice.designpattern.singleton;
 
 /**
  * Implementing Singleton design pattern using double check locking system

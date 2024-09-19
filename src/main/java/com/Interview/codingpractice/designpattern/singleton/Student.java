@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.designpattern;
+package com.Interview.codingpractice.designpattern.singleton;
 
 /**
  * Eager way of Singleton object

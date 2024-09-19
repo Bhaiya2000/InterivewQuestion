@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.designpattern;
+package com.Interview.codingpractice.designpattern.singleton;
 
 public class SingletonDesignPattern {
     public static void main(String[] args) {

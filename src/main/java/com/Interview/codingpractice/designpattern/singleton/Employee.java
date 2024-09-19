@@ -1,4 +1,4 @@
-package com.Interview.codingpractice.designpattern;
+package com.Interview.codingpractice.designpattern.singleton;
 
 /**
  * Lazy way of singleton object creation
