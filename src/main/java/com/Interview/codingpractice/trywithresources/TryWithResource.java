@@ -17,7 +17,5 @@ public class TryWithResource {
         {
             System.out.println(e.getMessage());
         }
-
-
     }
 }

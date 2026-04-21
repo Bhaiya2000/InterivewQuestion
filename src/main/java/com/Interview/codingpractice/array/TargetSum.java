@@ -1,10 +1,11 @@
 package com.Interview.codingpractice.array;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class TargetSum {
     public static void main(String[] args) {
-        int A[] = {2,7,11,15};
+        int A[] = {2,7,11,15,21};
         int target = 7;
         HashMap<Integer,Integer> hashMap =  new HashMap<>();
         boolean flag = false;
@@ -19,6 +20,9 @@ public class TargetSum {
                     hashMap.put(A[i],1);
                 }
             }
+        }
+        for(Map.Entry<Integer,Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey()+" "+entry.getValue());
         }
         if(flag == true){
             System.out.println("yes target sum is available");
