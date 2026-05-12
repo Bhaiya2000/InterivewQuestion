@@ -11,11 +11,14 @@ public class ListOfListStringConvertEachFirstLetterIntoUpperCase {
                 Arrays.asList("gbs","nef","mfe"),
                 Arrays.asList("hbs","oef","wfe")
         );
-
-        List<String> list1 = list.stream()
-                .flatMap(i-> i.stream())
-                .map(i-> i.substring(0,1).toUpperCase()+i.substring(1))
-                .toList();
+//
+//        List<String> list1 = list.stream()
+//                .flatMap(i-> i.stream())
+//                .map(i-> i.substring(0,1).toUpperCase()+i.substring(1))
+//                .toList();
+//        System.out.println(list1);
+       List<String> list1 = list.stream().flatMap(i-> i.stream())
+               .map(i-> i.substring(0,1).toUpperCase()+i.substring(1)).toList();
         System.out.println(list1);
     }
 }

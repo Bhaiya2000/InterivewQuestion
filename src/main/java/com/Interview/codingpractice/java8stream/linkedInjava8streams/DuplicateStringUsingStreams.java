@@ -9,13 +9,17 @@ import java.util.stream.Collectors;
 public class DuplicateStringUsingStreams {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("anand","shukla","anand","satna","shukla");
-        List<String> list1 =  list.stream().collect(Collectors.groupingBy(i-> i, Collectors.counting()))
-                .entrySet().stream().filter(i->i.getValue() >1).map(Map.Entry :: getKey).toList();
+//        List<String> list1 =  list.stream().collect(Collectors.groupingBy(i-> i, Collectors.counting()))
+//                .entrySet().stream().filter(i->i.getValue() >1).map(Map.Entry :: getKey).toList();
 //        System.out.println(list1);
 
-        List<String> list2 = list.stream().collect(Collectors.groupingBy(Function.identity(),
-                Collectors.counting())).entrySet().stream().filter(i-> i.getValue() >1)
-                .map(Map.Entry :: getKey).toList();
-        System.out.println(list2);
+//        List<String> list2 = list.stream().collect(Collectors.groupingBy(Function.identity(),
+//                Collectors.counting())).entrySet().stream().filter(i-> i.getValue() >1)
+//                .map(Map.Entry :: getKey).toList();
+//        System.out.println(list2);
+
+        List<String> list1 = list.stream().collect(Collectors.groupingBy(i->i,Collectors.counting()))
+                .entrySet().stream().filter(i->i.getValue() >1).map(Map.Entry :: getKey).toList();
+        System.out.println(list1);
     }
 }

@@ -8,10 +8,16 @@ import java.util.stream.Collectors;
 public class ListToMapExample {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("anand", "shukla", "java");
+//        Map<String,Integer> map = list.stream().collect(Collectors.toMap(
+//                i-> i, // key
+//                i->i.length() // map
+//        ));
+//        System.out.println(map);
         Map<String,Integer> map = list.stream().collect(Collectors.toMap(
-                i-> i, // key
-                i->i.length() // map
+                i->i,
+                i -> i.length()
         ));
         System.out.println(map);
+
     }
 }

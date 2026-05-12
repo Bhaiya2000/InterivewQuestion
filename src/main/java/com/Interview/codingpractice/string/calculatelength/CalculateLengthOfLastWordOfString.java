@@ -2,20 +2,35 @@ package com.Interview.codingpractice.string.calculatelength;
 
 public class CalculateLengthOfLastWordOfString {
     public static void main(String[] args) {
-        String s = "   fly me   to   the moon  ";
-        int n = s.length();
-        int length =0;
-        int ans =0;
-        for (int i = 0; i < n; i++) {
-            if(s.charAt(i) == ' '){
+//        String s = "   fly me   to   the moon  ";
+//        int n = s.length();
+//        int length =0;
+//        int ans =0;
+//        for (int i = 0; i < n; i++) {
+//            if(s.charAt(i) == ' '){
+//                length = 0;
+//            }
+//            else{
+//                length++;
+//                ans  = length;
+//            }
+//        }
+//        System.out.println(ans);
+        // output --> 4
+
+        String str = "   fly me   to   the moon  ";
+        int n = str.length();
+        int length = 0;
+        int countLength = 0;
+        for(int i =0; i<n; i++){
+            if(str.charAt(i) == ' '){
                 length = 0;
             }
             else{
                 length++;
-                ans  = length;
+                countLength = length;
             }
         }
-        System.out.println(ans);
-        // output --> 4
+        System.out.println(countLength);
     }
 }

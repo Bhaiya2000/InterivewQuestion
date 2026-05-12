@@ -8,8 +8,23 @@ public class CountIntegerWhichSatisfyEvenCondition {
         List<Integer> list = Arrays.asList(2,4,3,1,5,23,26,24,28,29);
 //        long count  = list.stream().filter(i-> i%2 == 0).count();
 //        System.out.println(count);
+//
+//        long count  = list.stream().filter(i-> i%2 == 0).count();
+//        System.out.println(count);
 
-        long count  = list.stream().filter(i-> i%2 == 0).count();
+//        List<Integer> list1 = Arrays.asList(2,4,3,1,5,23,26,24,28,29);
+//        List<Integer> list2 = list1.stream().filter(i-> i%2 == 0).toList();
+//        System.out.println(list2);
+
+//        long count  = list.stream().filter(i-> i%2 ==0).count();
+//        System.out.println(count);
+//        long count = list.stream().filter(i-> i%2 == 0).count();
+//        System.out.println(count);
+        long count = list.stream().filter(i-> i%2 == 0).count();
         System.out.println(count);
+
+
+
+
     }
 }

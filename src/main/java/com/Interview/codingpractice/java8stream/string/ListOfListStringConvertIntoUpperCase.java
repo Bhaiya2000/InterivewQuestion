@@ -13,7 +13,10 @@ public class ListOfListStringConvertIntoUpperCase {
                 Arrays.asList("gbs","nef","mfe"),
                 Arrays.asList("hbs","oef","wfe")
         );
-       List<String> list1 = list.stream().flatMap(i-> i.stream()).map(i-> i.toUpperCase()).toList();
+//       List<String> list1 = list.stream().flatMap(i-> i.stream()).map(i-> i.toUpperCase()).toList();
+//        System.out.println(list1);
+        List<String> list1 = list.stream().flatMap(i->i.stream())
+                .map(i-> i.toUpperCase()).toList();
         System.out.println(list1);
     }
 }

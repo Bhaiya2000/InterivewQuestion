@@ -10,8 +10,25 @@ public class FindAverageOfNumberWhoseSquareIsMoreThanTwentyFive {
 //                .mapToInt(i-> i).average().getAsDouble();
 //        System.out.println(avg);
 
-        double average = list.stream().map(i->i*i).filter(i-> i>25).mapToInt(i->i)
-                .average().getAsDouble();
-        System.out.println(average);
+//        double average = list.stream().map(i->i*i).filter(i-> i>25).mapToInt(i->i)
+//                .average().getAsDouble();
+//        System.out.println(average);
+
+//        double average = list.stream().filter(i-> i*i>25).mapToInt(i->i).average().getAsDouble();
+//        System.out.println(average);
+//
+//        List<Integer> list1 =  Arrays.asList(6,7,8,9);
+//        double avg = list1.stream().mapToInt(i->i).average().getAsDouble();
+//        System.out.println(avg);
+
+//        double avg = list.stream().map(i-> i*i)
+//                .filter(i-> i>25).mapToInt(i->i).average().getAsDouble();
+//        System.out.println(avg);
+
+
+        double avg = list.stream().map(i-> i*i)
+                .filter(i-> i>25).mapToInt(i-> i).average().getAsDouble();
+        System.out.println(avg);
+
     }
 }

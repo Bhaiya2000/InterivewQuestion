@@ -8,7 +8,12 @@ import java.util.Optional;
 public class FindSecondLargestIntegerFromListUsingStreamAPI {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1,4,2,3,6,7,9,3,4,5,6,7,8);
-        int max = list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+//        int max = list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+//        System.out.println(max);
+//        int max = list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+//        System.out.println(max);
+
+        long max = list.stream().sorted(Comparator.reverseOrder()).skip(0).findFirst().get();
         System.out.println(max);
     }
 }

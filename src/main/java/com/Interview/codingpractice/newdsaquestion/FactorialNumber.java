@@ -2,11 +2,17 @@ package com.Interview.codingpractice.newdsaquestion;
 
 public class FactorialNumber {
     public static void main(String[] args) {
-        int n = 4;
-        int factorial = 1;
+//        int n = 4;
+//        int factorial = 1;
+//        for(int i =1; i<=n; i++){
+//            factorial = factorial *i;
+//        }
+//        System.out.println(factorial);
+        int n = 5;
+        int fact = 1;
         for(int i =1; i<=n; i++){
-            factorial = factorial *i;
+            fact = fact*i;
         }
-        System.out.println(factorial);
+        System.out.println(fact);
     }
 }

@@ -4,12 +4,19 @@ import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        String s = sc.nextLine();
-        int n = s.length();
-        String ans ="";
-        for(int i=n-1; i>=0; i--) {
-            ans  =  ans + s.charAt(i);
+//        Scanner sc =  new Scanner(System.in);
+//        String s = sc.nextLine();
+//        int n = s.length();
+//        String ans ="";
+//        for(int i=n-1; i>=0; i--) {
+//            ans  =  ans + s.charAt(i);
+//        }
+//        System.out.println(ans);
+        String str = "abcdedfg";
+        int n =  str.length();
+        String ans = "";
+        for(int i = n-1; i>=0; i--){
+            ans = ans + str.charAt(i);
         }
         System.out.println(ans);
     }

@@ -2,11 +2,48 @@ package com.Interview.codingpractice.array;
 
 public class RotateArrayBTimesTowardsRight {
     public static void main(String[] args) {
-        int A[] = {1,2,3,4};
-        int B = 2;
+//        int A[] = {1,2,3,4};
+//        int B = 2;
+//        int n = A.length;
+//        int i = 0;
+//        int j = n-1;
+//        while(i<j){
+//            int temp = A[i];
+//            A[i] = A[j];
+//            A[j] = temp;
+//            i++;
+//            j--;
+//        }
+//        B = B%n;
+//         i = 0;
+//        j = B-1;
+//        while(i<j){
+//            int temp = A[i];
+//            A[i] = A[j];
+//            A[j] = temp;
+//            i++;
+//            j--;
+//        }
+//
+//        i = B;
+//        j = n-1;
+//        while(i<j){
+//            int temp = A[i];
+//            A[i] = A[j];
+//            A[j] = temp;
+//            i++;
+//            j--;
+//        }
+//
+//        for(int k=0; k<n ; k++){
+//            System.out.print(A[k]+" ");
+//        }
+
+        int A[] = {1,2,3,4,5,6,7};
         int n = A.length;
         int i = 0;
         int j = n-1;
+        int b = 2;
         while(i<j){
             int temp = A[i];
             A[i] = A[j];
@@ -14,9 +51,9 @@ public class RotateArrayBTimesTowardsRight {
             i++;
             j--;
         }
-        B = B%n;
-         i = 0;
-        j = B-1;
+        b = b%n;
+        i = 0;
+        j = b-1;
         while(i<j){
             int temp = A[i];
             A[i] = A[j];
@@ -24,8 +61,7 @@ public class RotateArrayBTimesTowardsRight {
             i++;
             j--;
         }
-
-        i = B;
+        i = b;
         j = n-1;
         while(i<j){
             int temp = A[i];
@@ -34,9 +70,8 @@ public class RotateArrayBTimesTowardsRight {
             i++;
             j--;
         }
-
-        for(int k=0; k<n ; k++){
-            System.out.print(A[k]+" ");
+        for(i =0; i<n; i++){
+            System.out.print(A[i]+" ");
         }
     }
 }

@@ -20,6 +20,9 @@ public class RemoveDuplicateCharacterFromString {
                 .mapToObj(i->(char)i).map(String::valueOf).collect(Collectors.joining());
         System.out.println(result);
 
+        String str1  = ans.chars().distinct().mapToObj(i->(char)i).map(String::valueOf).collect(Collectors.joining());
+        System.out.println(str1);
+
         // 3 way
 
         String str = ans.chars().mapToObj(i-> (char) i).
