@@ -3,6 +3,7 @@ package com.Interview.codingpractice.java8stream.employee.rivision;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class EmployeeWithSecondHighestSalary {
     public static void main(String[] args) {
@@ -17,8 +18,15 @@ public class EmployeeWithSecondHighestSalary {
                 new Employee(7,5000,"Karan","Sales")
         );
 
-        Integer secondHighestSalary =  employeeList.stream().map(i-> i.getSalary()).distinct()
-                .sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
-        System.out.println(secondHighestSalary);
+//        Integer secondHighestSalary =  employeeList.stream().map(i-> i.getSalary()).distinct()
+//                .sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+//        System.out.println(secondHighestSalary);
+
+        Employee secondLargestSalary = employeeList.stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+                .skip(1).findFirst().get();
+
+        System.out.println(secondLargestSalary.getId()+" "+secondLargestSalary.getName()+" "+secondLargestSalary.getSalary());
+
     }
 }

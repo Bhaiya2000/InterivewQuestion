@@ -2,6 +2,8 @@ package com.Interview.codingpractice.java8stream.employee.rivision;
 
 
 
+import com.Interview.codingpractice.output.interfaces.B;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -20,11 +22,18 @@ public class EmployeePartitionExampleMoreThanSpecificValue {
                 new Employee(7,5000,"Sales Representative","Sales")
         );
 
-        Map<Boolean, List<Employee>> employeeMap = employeeList
-                .stream().collect(Collectors.partitioningBy(i -> i.getSalary()>400));
+//        Map<Boolean, List<Employee>> employeeMap = employeeList
+//                .stream().collect(Collectors.partitioningBy(i -> i.getSalary()>400));
+//
+//        employeeMap.get(true).forEach(i->{
+//            System.out.println(i.getId() + " " +i.getName()+" "+i.getSalary()+" "+i.getDepartment());
+//        });
 
-        employeeMap.get(true).forEach(i->{
-            System.out.println(i.getId() + " " +i.getName()+" "+i.getSalary()+" "+i.getDepartment());
+        Map<Boolean, List<Employee>> map =  employeeList.stream()
+                .collect(Collectors.partitioningBy(i-> i.getSalary() >500));
+
+        map.get(true).forEach(i->{
+            System.out.println(i.getId()+" "+i.getName()+" "+i.getSalary());
         });
 
     }

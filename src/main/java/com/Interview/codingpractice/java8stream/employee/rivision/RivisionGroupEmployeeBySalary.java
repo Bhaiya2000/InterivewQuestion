@@ -18,13 +18,23 @@ public class RivisionGroupEmployeeBySalary {
                 new Employee(7,5000,"Karan","Sales")
         );
 
-        Map<Integer,List<Employee>> employeeMap =  employeeList.stream().collect(Collectors.groupingBy(Employee::getSalary));
+//        Map<Integer,List<Employee>> employeeMap =  employeeList.stream().collect(Collectors.groupingBy(Employee::getSalary));
+//
+//        employeeMap.forEach((salary,employee) -> {
+//            System.out.println("Salary "+salary);
+//
+//            employee.forEach(i->{
+//                System.out.println(i.getId()+" "+i.getName()+" "+i.getSalary()+" "+i.getDepartment());
+//            });
+//        });
 
-        employeeMap.forEach((salary,employee) -> {
-            System.out.println("Salary "+salary);
+        Map<Integer,List<Employee>> map = employeeList.stream()
+                .collect(Collectors.groupingBy(Employee::getSalary));
+        map.forEach((salary, employee) ->{
+            System.out.println("Salary is "+salary);
 
             employee.forEach(i->{
-                System.out.println(i.getId()+" "+i.getName()+" "+i.getSalary()+" "+i.getDepartment());
+                System.out.println(i.getId()+" "+i.getName()+" "+i.getDepartment());
             });
         });
     }

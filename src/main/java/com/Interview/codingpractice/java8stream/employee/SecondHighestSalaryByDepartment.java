@@ -16,14 +16,16 @@ public class SecondHighestSalaryByDepartment {
                 new Employee(900,"akash","software developer"),
                 new Employee(2000,"aman","software tester")
         );
-        Map<String,Integer> secondHighestSalaryByDepartment = list.stream().
-                collect(Collectors.groupingBy(Employee::getDepartment)).entrySet().stream()
-                .collect(Collectors.toMap(
-                        Map.Entry :: getKey,
-                        i-> i.getValue().stream()
-                                .map(Employee::getSalary).distinct().
-                                sorted(Comparator.reverseOrder()).skip(0).findFirst().get()
-                ));
-        System.out.println(secondHighestSalaryByDepartment);
+//        Map<String,Integer> secondHighestSalaryByDepartment = list.stream().
+//                collect(Collectors.groupingBy(Employee::getDepartment)).entrySet().stream()
+//                .collect(Collectors.toMap(
+//                        Map.Entry :: getKey,
+//                        i-> i.getValue().stream()
+//                                .map(Employee::getSalary).distinct().
+//                                sorted(Comparator.reverseOrder()).skip(0).findFirst().get()
+//                ));
+//        System.out.println(secondHighestSalaryByDepartment);
+
+
     }
 }

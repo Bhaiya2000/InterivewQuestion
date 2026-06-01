@@ -18,19 +18,22 @@ public class CalculateLengthOfLastWordOfString {
 //        System.out.println(ans);
         // output --> 4
 
+//        String str = "   fly me   to   the moon  ";
+//        int n = str.length();
+//        int length = 0;
+//        int countLength = 0;
+//        for(int i =0; i<n; i++){
+//            if(str.charAt(i) == ' '){
+//                length = 0;
+//            }
+//            else{
+//                length++;
+//                countLength = length;
+//            }
+//        }
+//        System.out.println(countLength);
         String str = "   fly me   to   the moon  ";
         int n = str.length();
-        int length = 0;
-        int countLength = 0;
-        for(int i =0; i<n; i++){
-            if(str.charAt(i) == ' '){
-                length = 0;
-            }
-            else{
-                length++;
-                countLength = length;
-            }
-        }
-        System.out.println(countLength);
+
     }
 }

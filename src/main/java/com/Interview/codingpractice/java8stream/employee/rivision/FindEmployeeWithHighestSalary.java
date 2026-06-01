@@ -18,10 +18,13 @@ public class FindEmployeeWithHighestSalary {
         );
 
 
-        Employee employee =  employeeList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
-                .skip(0).findFirst().get();
-        System.out.println(employee.getId()+" "+employee.getName()+" "+employee.getSalary()+" "+employee.getDepartment());
+//        Employee employee =  employeeList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+//                .skip(0).findFirst().get();
+//        System.out.println(employee.getId()+" "+employee.getName()+" "+employee.getSalary()+" "+employee.getDepartment());
 
+        Employee employee =  employeeList.stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(0).findFirst().get();
+        System.out.println(employee.getId()+" "+employee.getSalary()+" "+employee.getName());
 
     }
 }
