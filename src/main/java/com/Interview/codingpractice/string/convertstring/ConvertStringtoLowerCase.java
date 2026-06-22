@@ -20,14 +20,24 @@ public class ConvertStringtoLowerCase {
 //            }
 //        }
 //        System.out.println(a);
+//        String str = "ABCFDERGHI";
+//        char [] arr = str.toCharArray();
+//        int n  = arr.length;
+//        for(int i =0; i<n; i++){
+//            if(arr[i] >= 'A' && arr[i] <= 'Z'){
+//                arr[i] = (char) (arr[i] + 32);
+//            }
+//        }
+//        System.out.println(arr);
+
         String str = "ABCFDERGHI";
+        int n  = str.length();
         char [] arr = str.toCharArray();
-        int n  = arr.length;
         for(int i =0; i<n; i++){
-            if(arr[i] >= 'A' && arr[i] <= 'Z'){
-                arr[i] = (char) (arr[i] + 32);
-            }
+            arr[i] = (char) (arr[i] +32);
         }
+
         System.out.println(arr);
+
     }
 }

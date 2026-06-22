@@ -37,35 +37,68 @@ public class ConvertCapitalLetterofFirstcharacterOfEachWord {
 //        }
 //        System.out.println(stringBuilder.toString());
 
-        String str = " anand shukla satna madhya pradesh ";
-        int n = str.length();
-        int i = 0;
-        StringBuilder stringBuilder1 =  new StringBuilder();
-        while(i<n){
-            while(i<n && str.charAt(i) == ' '){
-                i++;
-            }
-            StringBuilder stringBuilder =  new StringBuilder();
-            boolean firstLetter  = true;
-            while(i<n && str.charAt(i) != ' '){
-                if(firstLetter == true){
-                    stringBuilder.append((char)(str.charAt(i)  - 32));
-                    firstLetter = false;
+//        String str = " anand shukla satna madhya pradesh ";
+//        int n = str.length();
+//        int i = 0;
+//        StringBuilder stringBuilder1 =  new StringBuilder();
+//        while(i<n){
+//            while(i<n && str.charAt(i) == ' '){
+//                i++;
+//            }
+//            StringBuilder stringBuilder =  new StringBuilder();
+//            boolean firstLetter  = true;
+//            while(i<n && str.charAt(i) != ' '){
+//                if(firstLetter == true){
+//                    stringBuilder.append((char)(str.charAt(i)  - 32));
+//                    firstLetter = false;
+//
+//                }
+//                else{
+//                    stringBuilder.append(str.charAt(i));
+//                }
+//                i++;
+//            }
+//            while(i<n && str.charAt(i) == ' '){
+//                i++;
+//            }
+//            stringBuilder1.append(stringBuilder);
+//            if(i<n){
+//                stringBuilder1.append(' ');
+//            }
+//        }
+//        System.out.println(stringBuilder1.toString());
 
+        String str  = " anand shukla satna madhya pradesh ";
+        int n  = str.length();
+        int i =0;
+        StringBuilder stringBuilder =  new StringBuilder();
+        while(i < n){
+            while(i<n && str.charAt(i) == ' '){
+                i++;
+            }
+
+            StringBuilder stringBuilder1 =  new StringBuilder();
+            boolean firstLetter  =  true;
+            while (i< n && str.charAt(i) != ' '){
+                if(firstLetter == true){
+                    stringBuilder1.append((char)(str.charAt(i) - 32));
+                    firstLetter =  false;
                 }
-                else{
-                    stringBuilder.append(str.charAt(i));
+                else {
+                    stringBuilder1.append(str.charAt(i));
                 }
                 i++;
             }
             while(i<n && str.charAt(i) == ' '){
                 i++;
             }
-            stringBuilder1.append(stringBuilder);
+
+            stringBuilder.append(stringBuilder1);
             if(i<n){
-                stringBuilder1.append(' ');
+               stringBuilder.append(' ');
             }
         }
-        System.out.println(stringBuilder1.toString());
+
+        System.out.println(stringBuilder.toString());
     }
 }

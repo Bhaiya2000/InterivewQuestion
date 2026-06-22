@@ -57,17 +57,42 @@ public class LongestSubstringWithoutRepeatingCharacter {
 //           }
 //       }
 //       System.out.println(max_Length);
+//        String str = "abcdabcdnedfgki";
+//        int n  = str.length();
+//        int left  = 0;
+//        int right = 0;
+//        HashSet<Character> set = new HashSet<>();
+//        int maxLength = 0;
+//        while(right < n){
+//            if(set.add(str.charAt(right))){
+//                int length = right - left  + 1;
+//                if(length > maxLength){
+//                    maxLength =  length;
+//                }
+//                right++;
+//            }
+//            else{
+//                while(str.charAt(left) != str.charAt(right)){
+//                    set.remove(str.charAt(left));
+//                    left++;
+//                }
+//                set.remove(str.charAt(left));
+//                left++;
+//            }
+//        }
+//        System.out.println(maxLength);
+
         String str = "abcdabcdnedfgki";
         int n  = str.length();
-        int left  = 0;
+        int left = 0;
         int right = 0;
-        HashSet<Character> set = new HashSet<>();
-        int maxLength = 0;
+        int maxLenght = 0;
+        HashSet<Character> set  =  new HashSet<>();
         while(right < n){
             if(set.add(str.charAt(right))){
-                int length = right - left  + 1;
-                if(length > maxLength){
-                    maxLength =  length;
+                int length = right - left + 1;
+                if(length > maxLenght){
+                    maxLenght =  length;
                 }
                 right++;
             }
@@ -80,6 +105,6 @@ public class LongestSubstringWithoutRepeatingCharacter {
                 left++;
             }
         }
-        System.out.println(maxLength);
+        System.out.println(maxLenght);
     }
 }

@@ -12,10 +12,18 @@ public class ReverseString {
 //            ans  =  ans + s.charAt(i);
 //        }
 //        System.out.println(ans);
+//        String str = "abcdedfg";
+//        int n =  str.length();
+//        String ans = "";
+//        for(int i = n-1; i>=0; i--){
+//            ans = ans + str.charAt(i);
+//        }
+//        System.out.println(ans);
+
         String str = "abcdedfg";
-        int n =  str.length();
+        int n  = str.length();
         String ans = "";
-        for(int i = n-1; i>=0; i--){
+        for(int i =n-1; i>=0; i--){
             ans = ans + str.charAt(i);
         }
         System.out.println(ans);

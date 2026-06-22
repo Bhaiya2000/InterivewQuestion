@@ -17,9 +17,18 @@ public class ConvertStringtoUpperCase {
 //            }
 //        }
 //        System.out.println(a);
-        String str = "abcdefghi";
+//        String str = "abcdefghi";
+//        char [] arr = str.toCharArray();
+//        int n = arr.length;
+//        for(int i =0; i<n; i++){
+//            if(arr[i] >= 'a' && arr[i] <= 'z'){
+//                arr[i] = (char) (arr[i] - 32);
+//            }
+//        }
+//        System.out.println(arr);
+        String str = "abcdef";
         char [] arr = str.toCharArray();
-        int n = arr.length;
+        int n  = arr.length;
         for(int i =0; i<n; i++){
             if(arr[i] >= 'a' && arr[i] <= 'z'){
                 arr[i] = (char) (arr[i] - 32);

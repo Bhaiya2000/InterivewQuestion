@@ -32,29 +32,54 @@ public class TargetSum {
 //            System.out.println("no target sum is available");
 //        }
 
-        int A[] = {1,2,3,4,5,6,7,8};
-        int target  = 16;
-        int n = A.length;
-        boolean flag =  false;
-        HashMap<Integer,Integer> map =  new HashMap<>();
-        for(int i =0; i<n; i++){
-            int b = target - A[i];
+//        int A[] = {1,2,3,4,5,6,7,8};
+//        int target  = 16;
+//        int n = A.length;
+//        boolean flag =  false;
+//        HashMap<Integer,Integer> map =  new HashMap<>();
+//        for(int i =0; i<n; i++){
+//            int b = target - A[i];
+//            if(map.containsKey(b)){
+//                flag =  true;
+//                break;
+//            }
+//            else{
+//                if(map.containsKey(A[i]) == false){
+//                    map.put(A[i],1);
+//                }
+//            }
+//        }
+//
+//        if (flag ==  true){
+//            System.out.println("Target sum is available in the array");
+//        }
+//        else{
+//            System.out.println("Target sum is not available in the array");
+//        }
+
+        int arr[] = {1,2,4,5,3,6,7,8,9};
+        int target = 14;
+        int n  = arr.length;
+        HashMap<Integer,Integer> map = new HashMap<>();
+        boolean flag = false;
+        for(int i=0; i<n; i++){
+            int b = target - arr[i];
             if(map.containsKey(b)){
-                flag =  true;
+                flag = true;
                 break;
             }
             else{
-                if(map.containsKey(A[i]) == false){
-                    map.put(A[i],1);
+                if(map.containsKey(arr[i]) == false){
+                    map.put(arr[i],1);
                 }
             }
         }
-
-        if (flag ==  true){
-            System.out.println("Target sum is available in the array");
+        if(flag == false){
+            System.out.println("Target sum is not available");
         }
         else{
-            System.out.println("Target sum is not available in the array");
+            System.out.println("Target sum is available");
         }
+
     }
 }

@@ -34,6 +34,17 @@ public class CalculateLengthOfLastWordOfString {
 //        System.out.println(countLength);
         String str = "   fly me   to   the moon  ";
         int n = str.length();
-
+        int length = 0;
+        int countLenght =0;
+        for(int i =0; i<n; i++){
+            if(str.charAt(i) == ' '){
+                length = 0;
+            }
+            else{
+                length++;
+                countLenght = length;
+            }
+        }
+        System.out.println(countLenght);
     }
 }
